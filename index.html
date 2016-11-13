@@ -1,7 +1,865 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="ziofat">
+    <meta name="description" content="李逸峰的简历">
+    <meta name="keywords" content="胖叔叔, 李逸峰, 简历">
+
+    <title>李逸峰</title>
+    <link rel="icon" href="images/site/favicon.ico">
+
+    <!-- 谷歌字体 -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <!-- MATERIAL 字体图标-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONT AWESOME 字体图标 -->
+    <link href="stylesheets/vendors/font-awesome.min.css" rel="stylesheet">
+    <!-- 动画 -->
+    <link href="stylesheets/vendors/animate.min.css" rel="stylesheet">
+    <!-- MAGNIFICENT POPUP -->
+    <link href="stylesheets/vendors/magnific-popup.css" rel="stylesheet">
+    <!-- SWIPER -->
+    <link href="stylesheets/vendors/swiper.min.css" rel="stylesheet">
+    <!-- MATERIALIZE -->
+    <link href="stylesheets/vendors/materialize.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="stylesheets/vendors/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式表 -->
+    <link href="stylesheets/style_blue.css" id="switch_style" rel="stylesheet">
+</head>
 <body>
-<h1>Personal Page</h1>
-<p>This will be a introduction page of ziofat.</p>
+
+
+<!--==========================================
+                 预载入动画
+===========================================-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="box-holder animated bounceInDown">
+                <span class="load-box"><span class="box-inner"></span></span>
+            </div>
+            <!-- 名字和自我定位 -->
+            <div class="text-holder text-center">
+                <h2>李逸峰</h2>
+                <h6>全栈 Web 软件开发者</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                    头部
+===========================================-->
+<header id="home">
+    <nav id="theMenu" class="menu">
+        <!--菜单-->
+        <div id="menu-options" class="menu-wrap">
+            <!--个人 LOGO-->
+            <div class="logo-flat">
+                <img alt="personal-logo" class="img-responsive" src="images/profile/logo.png">
+            </div>
+            <br>
+
+            <!--页面链接-->
+            <a href="#home"><i class="title-icon fa fa-user"></i>主页</a>
+            <a href="#about"><i class="title-icon fa fa-dashboard"></i>关于我</a>
+            <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>教育经历</a>
+            <a href="#skills"><i class="title-icon fa fa-sliders"></i>专业技能</a>
+            <a href="#experience"><i class="title-icon fa fa-suitcase"></i>职业经历</a>
+            <a href="#portfolios"><i class="title-icon fa fa-archive"></i>作品</a>
+            <a href="#interest"><i class="title-icon fa fa-heart"></i>兴趣爱好</a>
+            <a href="#testimonials"><i class="title-icon fa fa-users"></i>推荐</a>
+            <a href="#contact"><i class="title-icon fa fa-envelope"></i>联系我</a>
+        </div>
+
+        <!-- 菜单按钮 -->
+        <div id="menuToggle">
+            <div class="toggle-normal">
+                <i class="material-icons top-bar">remove</i>
+                <i class="material-icons middle-bar">remove</i>
+                <i class="material-icons bottom-bar">remove</i>
+            </div>
+        </div>
+    </nav>
+
+    <!--头部背景-->
+    <div class="header-background section"></div>
+
+</header>
+
+
+<!--==========================================
+                   个人卡片
+===========================================-->
+<div id="v-card-holder" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+
+                <!-- 个人卡片 -->
+                <div id="v-card" class="card">
+
+                    <!-- 资料图片 -->
+                    <div id="profile" class="right">
+                        <img alt="profile-image" class="img-responsive" src="images/profile/profile.png">
+                        <div class="slant"></div>
+                        <!--Github 链接按钮-->
+                        <a href="https://github.com/ziofat" target="_blank">
+							<div class="btn-floating btn-large add-btn">
+								<i class="fa fa-github"></i>
+							</div>
+                        </a>
+                    </div>
+
+                    <div class="card-content">
+
+                        <!-- 名字和自我定位 -->
+                        <div class="info-headings">
+                            <h4 class="text-uppercase left">李逸峰</h4>
+                            <h6 class="text-capitalize left">全栈 Web 软件开发者</h6>
+                        </div>
+
+                        <!-- 联系信息 -->
+                        <div class="infos">
+                            <ul class="profile-list">
+                                <li class="clearfix">
+                                    <span class="title"><i class="material-icons">email</i></span>
+                                    <span class="content">printlts@gmail.com</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="title"><i class="material-icons">language</i></span>
+                                    <span class="content">ziofat.me</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="title"><i class="fa fa-weixin" aria-hidden="true"></i></span>
+                                    <span class="content">printlts</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="title"><i class="material-icons">phone</i></span>
+                                    <span class="content">+61 424 543 902</span>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="title"><i class="material-icons">place</i></span>
+                                    <span class="content">95/288-306 Wattle St., Ultimo, NSW, AU</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <!--链接-->
+                        <div class="links">
+                            <!-- 微博 -->
+                            <a href="http://weibo.com/printlts" id="first_one" target="_blank"
+                               class="social btn-floating red"><i
+                                    class="fa fa-weibo"></i></a>
+							<!-- QQ -->
+                            <a href="http://wpa.qq.com/msgrd?v=3&uin=476097776&site=qq&menu=yes" target="_blank" class="social btn-floating blue"><i
+                                    class="fa fa-qq"></i></a>
+                            <!-- LINKEDIN -->
+                            <a href="https://www.linkedin.com/in/ziofat" target="_blank" class="social btn-floating blue darken-3"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                   关于
+===========================================-->
+<div id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- 详细说明 -->
+                <div id="about-card" class="card">
+                    <div class="card-content">
+                        <!-- 自我评价 -->
+                        <p>
+							你好。我是李逸峰。一个拥有 3 年网络开发经验的 Web 应用开发工程师。熟悉 Web
+							应用开发的各个阶段。包括网页设计，富前端应用开发，服务端编程，数据库，服务器运维与部署等。熟练使用
+							HTML5, CSS, CSS3, SASS, LESS, JSON, Java, JavaScript,
+                            jQuery, Angular JS 等。同时对项目管理与团队协作也有深刻的理解。
+                        </p>
+                    </div>
+                    <!-- 按钮 -->
+                    <div id="about-btn" class="card-action">
+                        <div class="about-btn">
+                            <a href="#" class="btn waves-effect">下载简历</a>
+                            <a href="#contact" class="btn waves-effect">联系我</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                   教育经历
+===========================================-->
+<section id="education" class="section">
+    <div class="container">
+        <!-- 标题 -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/book.png" alt="demo">教育经历</h4>
+        </div>
+
+        <div id="timeline-education">
+            <!-- 第一个时间点 -->
+            <div class="timeline-block">
+                <div class="timeline-dot"><h6>B</h6></div>
+                <!-- 时间轴内容 -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <h6 class="timeline-title">环境科学</h6>
+                        <div class="timeline-info">
+                            <h6>
+                                <small>大连理工大学·环境学院</small>
+                            </h6>
+                            <h6>
+                                <small>2009 - 2013</small>
+                            </h6>
+                        </div>
+                        <!-- 说明 -->
+                        <p>
+                            我在大连理工大学完成了我的本科教育。主修课程包括高等数学、线性代数、无机化学、有机化学、环境科学等。并在 2013
+							年顺利毕业，获得学士学位。
+                        </p>
+                        <!-- 更多内容 -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二个时间点 -->
+            <div class="timeline-block">
+                <div class="timeline-dot"><h6>C</h6></div>
+                <!-- 时间轴内容 -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <h6 class="timeline-title">创新软件</h6>
+                        <div class="timeline-info">
+                            <h6>
+                                <small>大连理工大学·创新学院</small>
+                            </h6>
+                            <h6>
+                                <small>2009 - 2013</small>
+                            </h6>
+                        </div>
+                        <!-- 说明 -->
+                        <p>
+                            在大学四年期间，我不仅正常完成了环境学院的教育，同时我对 IT 技术产生了浓厚的兴趣，并加入了创新学院的软件工程班。四年中，我学会了基础的计算机编程技能，并多次代表大连理工大学参加国内比赛。
+                        </p>
+						<!-- 更多内容 -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-2">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第三个时间点 -->
+            <div class="timeline-block">
+                <div class="timeline-dot"><i class="fa fa-graduation-cap"></i></div>
+				<!-- 时间轴内容 -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <h6 class="timeline-title">软件工程</h6>
+                        <div class="timeline-info">
+                            <h6>
+                                <small>悉尼大学</small>
+                            </h6>
+                            <h6>
+                                <small>2014 - 2016</small>
+                            </h6>
+                        </div>
+                        <!-- 说明 -->
+                        <p>
+                            在大学毕业前，我深觉自己的兴趣所在是 IT 技术，为了充实自己，我决定出国留学。最终我在悉尼大学进行了为期两年的学习，主修软件工程，主要课程包括信息系统开发，软件开发，面向对象，IT 
+							项目管理，数据库，云计算等。最终于 2016 年完成学业，获得了 IT 硕士学位。
+                        </p>
+                        <!-- 更多内容 -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-3">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================
+                   专业技能
+===========================================-->
+<section id="skills" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/mixer.png" alt="demo">专业技能</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="skills-card" class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="skills-title">
+                                    <h6 class="text-center">前端开发</h6>
+                                </div>
+								<div class="skillbar" data-percent="93%">
+                                    <div class="skillbar-title"><span>Bootstrap</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">93%</div>
+                                </div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>HTML5</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>CSS3</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+								<div class="skillbar" data-percent="86%">
+                                    <div class="skillbar-title"><span>JavaScript (ES6)</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">86%</div>
+                                </div>
+                                <div class="skillbar" data-percent="82%">
+                                    <div class="skillbar-title"><span>jQuery</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">82%</div>
+                                </div>
+								<div class="skillbar" data-percent="78%">
+                                    <div class="skillbar-title"><span>Angular</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">78%</div>
+                                </div>
+								<div class="skillbar" data-percent="65%">
+                                    <div class="skillbar-title"><span>React</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="skills-title">
+                                    <h6 class="text-center">后端开发</h6>
+                                </div>
+                                <div class="skillbar" data-percent="90%">
+                                    <div class="skillbar-title"><span>Node.js</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">90%</div>
+                                </div>
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>PHP</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>MySQL</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>MongoDB</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+								<div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>Python</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+								<div class="skillbar" data-percent="65%">
+                                    <div class="skillbar-title"><span>Hadoop/Spark</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                </div>
+								<div class="skillbar" data-percent="65%">
+                                    <div class="skillbar-title"><span>Java</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">65%</div>
+                                </div>
+								<div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>Nginx/Apache</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="skills-title">
+                                    <h6 class="text-center">团队协作</h6>
+                                </div>
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>Git</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">85%</div>
+                                </div>
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>敏捷开发</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>测试</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+                                <div class="skillbar" data-percent="75%">
+                                    <div class="skillbar-title"><span>团队交流</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">75%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================
+                   职业经历
+===========================================-->
+<section id="experience" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/layers.png" alt="demo">职业经历</h4>
+        </div>
+
+        <div id="timeline-experience">
+            <div class="timeline-block">
+                <div class="timeline-dot"><h6>S</h6></div>
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <h6 class="timeline-title">全栈开发工程师</h6>
+                        <div class="timeline-info">
+                            <h6>
+                                <small>剑网 3 配装器</small>
+                            </h6>
+                            <h6>
+                                <small>2013 - 至今</small>
+                            </h6>
+                        </div>
+                        <p>
+                            个人项目，持续维护超过 3 年，历经数次改版，应用了绝大多数个人所学技能。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-block">
+                <div class="timeline-dot"><h6>H</h6></div>
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <h6 class="timeline-title">全栈开发工程师</h6>
+                        <div class="timeline-info">
+                            <h6>
+                                <small>IdeasMen</small>
+                            </h6>
+                            <h6>
+                                <small>2016</small>
+                            </h6>
+                        </div>
+                        <p>
+                            在悉尼作为全栈开发工程师在 IdeasMen 公司兼职，参与开发 Hospitality Book 网站，同时参与了前后端开发和设计。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================================
+                  弹出层
+===========================================-->
+<section>
+    <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1">
+        <div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+                <div class="modal-header  text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-close"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel-1">大连理工大学·环境科学</h4>
+                    <h6>
+                        <small>2013 年 6 月 26 日</small>
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" alt="graduation" src="images/timeline/IMG_20130626_121420.jpg">
+                    <p>
+                        从大连理工大学毕业。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header  text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-close"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel-2">创新学院</h4>
+                    <h6>
+                        <small>2009 年 - 2013 年</small>
+                    </h6>
+                </div>
+                <div class="modal-body">
+					<p>所获得的荣誉有：</p>
+					<p>
+						<a href="http://www.google.cn/university/androidchallenge/2011/regional.html#tab=UNDEFINED-CONTENT-ITEM-1" target="_blank">
+						Google 2011年 第二届 Android 应用开发中国大学生挑战赛 - 东北区 三等奖</a>
+                    </p>
+					<p>
+						<a href="http://chuangxin.dlut.edu.cn/info/1030/2376.htm" target="_blank">
+						2011年大连理工大学《Android手机编程大赛》 一等奖</a>
+					</p>
+					<p>
+						<a href="https://www.google.com/intl/zh-CN/daxue/blog/vote.html" target="_blank">
+						Google 暑期大学生博客分享大赛 - 2011 Android 成长篇 - Android 应用体验创意视频短片 二等奖</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-3">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!--MODAL HEADER-->
+                <div class="modal-header  text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true"><i class="fa fa-close"></i></span></button>
+                    <h4 class="modal-title" id="myModalLabel-3">悉尼大学的学习</h4>
+                    <h6>
+                        <small>2014 年 - 2016 年</small>
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" alt="graduation" src="images/timeline/IMG_20140711_125459.jpg">
+                    <p>
+                        在悉尼大学主楼前。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==========================================
+                  作品
+===========================================-->
+<section id="portfolios" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/safe.png" alt="demo">个人作品</h4>
+        </div>
+        <div id="portfolios-card" class="row">
+            <!--筛选选项-->
+            <!--<ul class="nav nav-tabs">
+                <li class="active waves-effect list-shuffle"><a id="all-sample" class="active" href="#all" data-toggle="tab">所有</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#websites" data-toggle="tab">网站</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#other" data-toggle="tab">其他</a></li>
+            </ul>-->
+            <!-- 类别 -->
+            <div class="tab-content">
+                <!-- 所有类别 -->
+                <div id="all"></div>
+                <!-- 网站 -->
+                <div id="websites">
+                    <!-- 剑网3配装器 -->
+                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
+                        <figure class="port-effect-scale">
+                            <img src="images/portfolios/j3pz-square.png" class="img-responsive" alt="剑网 3 配装器"/>
+                            <figcaption>
+                                <h2>剑网 3 <span>配装器</span></h2>
+                                <p>剑网3全职业配装器为剑网3玩家提供完善、准确的配装工具。</p>
+                                <a href="j3pz.html">详细</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT TWO SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                        <figure class="port-effect-scale">
+                            <img src="images/portfolios/acacia-square.png" class="img-responsive" alt="花间循环模拟器"/>
+                            <figcaption>
+                                <h2><i class="fa fa-play-circle" aria-hidden="true"></i>花间循环 <span>模拟器</span>
+                                </h2>
+                                <p>花间循环模拟器是一个在前端完全模拟游戏角色输出过程以估算输出能力的工具。</p>
+                                <a class="popup-vimeo" href="https://vimeo.com/45830194">查看视频</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT THREE SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                        <figure class="port-effect-up">
+                            <img src="images/portfolios/amaranth-square.png" class="img-responsive" alt="不朽花密码管理"/>
+                            <figcaption>
+                                <h2><span>不朽花</span> 密码管理</h2>
+                                <p>不朽花密码管理是一个不需要存储的密码管理方案。由花密所启发。</p>
+                                <a href="images/portfolios/amaranth.png" class="popup-image"
+                                   data-effect="mfp-move-horizontal">详细</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <!-- 其他 -->
+                <div id="other">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================
+                   个人兴趣
+===========================================-->
+<section id="interest" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/heart.png" alt="demo">个人兴趣</h4>
+        </div>
+
+        <div id="interest-card" class="card">
+            <div class="card-content">
+                <p>
+                    我拥有很多爱好，热爱生活，乐观积极。比如，我喜欢下厨，制作好看又好吃的美食。
+					其次，我还喜欢魔术，因为它能带给观众快乐，同时也会给我带来快乐。
+					游戏也是我的爱好之一，因为我觉得，游戏是人类艺术的最终形态，融汇了文学、音乐、电影等诸多元素。
+					同时，我喜欢旅行，不同的文化能带给我更多的灵感和感触。
+					我同样爱好游泳和乒乓球，游泳让我觉得心情愉悦和休闲，而乒乓球带给我紧张刺激的竞技快感。
+                </p>
+            </div>
+
+            <!--兴趣图标-->
+            <div class="row no-gutters">
+                <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
+                    <div class="interest-icon">
+                        <i class="fa fa-music"></i>
+                        <span>美食</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-magic"></i>
+                        <span>魔术</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon">
+                        <i class="fa fa-gamepad"></i>
+                        <span>游戏</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-plane"></i>
+                        <span>旅行</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon">
+                        <i class="material-icons">pool</i>
+                        <span>游泳</span>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-book"></i>
+                        <span>阅读</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================
+             推荐
+===========================================-->
+<section id="testimonials" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/handshake.png" alt="demo">推荐</h4>
+        </div>
+        <div id="testimonials-card" class="row card">
+            <div class="col-md-12 col-xs-12">
+                <div id="clients-slider"
+                     class="swiper-container swiper-container-clients">
+                    <div class="swiper-wrapper">
+                        <!-- David Cruwys -->
+                        <div class="swiper-slide">
+                            <div class="col-md-12">
+                                <!-- 图片 -->
+                                <div class="client-img center-block">
+                                    <img alt="client-image" class="center-block" src="images/clients/david.png">
+                                </div>
+                                <blockquote>
+                                    I work with Yifeng on a complex web development projects based on MEAN stack and I find him to be extremely
+                                    creative, efficiency and a technical developer. Yifeng expertise involves building complex front end web application
+									using modern technology.
+                                    <cite>David Cruwys, CTO, IdeasMen.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <!-- Uwe Roehm -->
+                        <div class="swiper-slide">
+                            <div class="col-md-12">
+                                <!-- 图片 -->
+                                <div class="client-img center-block">
+                                    <img alt="client-image" class="center-block" src="images/clients/uwe.png">
+                                </div>
+                                <blockquote>
+                                    Yifeng is a talent developer. He drives his ingenuity and fantasy to view different touchable situations
+									from several perspectives and investigate relative context between them while he is handling
+									requirements changes from his clients, to create better product.
+                                    <cite>Uwe Roehm, Associate Professor, University of Sydney.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 分页 -->
+                    <div class="swiper-pagination swiper-pagination-clients"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================================
+                  联系我
+===========================================-->
+<section id="contact" class="section">
+    <div class="container">
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><img src="images/icons/envelope.png" alt="demo">联系我</h4>
+        </div>
+        <div class="row">
+            <div id="contact-card" class="col-md-5 col-sm-12 col-xs-12">
+                <div class="card">
+                    <div class="card-content">
+                        <form id="contact-form" name="c-form">
+                            <!-- 名字 -->
+                            <div class="input-field">
+                                <input id="first_name" type="text" class="validate" name="name" required>
+                                <label for="first_name">名字</label>
+                            </div>
+                            <!--主题-->
+                            <div class="input-field">
+                                <input id="sub" type="text" class="validate" name="sub">
+                                <label for="sub">主题</label>
+                            </div>
+                            <!--邮箱-->
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate" name="_replyto" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <!--消息-->
+                            <div class="input-field">
+                                <textarea id="textarea1" class="materialize-textarea" name="message"
+                                          required></textarea>
+                                <label for="textarea1">内容</label>
+                            </div>
+                            <!-- 发送按钮 -->
+                            <div class="contact-send">
+                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                                        class="btn waves-effect">发送
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--FORM LOADER-->
+                    <div id="form-loader" class="progress is-hidden">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <!-- 我的位置 -->
+                <div id="map-card" class="card">
+                    <!-- 地图 -->
+                    <div id="myMap"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--==========================================
+                     回到顶部
+===========================================-->
+<div id="scroll-top">
+    <div id="scrollup"><i class="fa fa-angle-up"></i></div>
+</div>
+
+<!--==========================================
+                      底栏
+===========================================-->
+
+<footer>
+    <div class="container">
+        <!--FOOTER DETAILS-->
+        <p class="text-center">
+            © 个人简历. All right reserved by
+            <a href="http://ziofat.me/" target="_blank">
+                <strong>李逸峰</strong>
+            </a>
+        </p>
+    </div>
+</footer>
+
+
+<!--==========================================
+                  脚本
+===========================================-->
+<script src="javascript/vendors/jquery-2.1.3.min.js"></script>
+<script src="javascript/vendors/bootstrap.min.js"></script>
+<script src="javascript/vendors/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpHaYFEHPEKGd9h4jKqjzDxGuvmC23T5I"></script>
+<script src="javascript/vendors/markerwithlabel.min.js"></script>
+<script src="javascript/vendors/retina.min.js"></script>
+<script src="javascript/vendors/scrollreveal.min.js"></script>
+<script src="javascript/vendors/swiper.jquery.min.js"></script>
+<script src="javascript/vendors/jquery.magnific-popup.min.js"></script>
+<script src="javascript/custom.js"></script>
+
 </body>
 </html>
