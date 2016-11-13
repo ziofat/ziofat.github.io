@@ -139,6 +139,29 @@
                 preloader: false,
                 fixedContentPos: false
             });
+            $('.popup-tudou').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',
+                iframe: {
+                    patterns:{
+                        tudou:{
+                            index: 'tudou.com',
+                            id: function(url) {
+                                return url.match(/\/view\/(.+)\//g)[1];
+                            },
+                            src: '//www.tudou.com/programs/view/html5embed.action?type=0&code=%id%&lcode=&resourceId=508021294_06_05_99'
+                        }
+                    }
+                },
+                markup:'<div class="mfp-iframe-scaler">' +
+                    '<div class="mfp-close"></div>' +
+                    '<iframe class="mfp-iframe" allowtransparency="true" allowfullscreen="true" allowfullscreenInteractive="true" scrolling="no" border="0" frameborder="0" style="width:480px;height:400px;"></iframe>'+
+                    '</div>',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
         }
 
         function initSkills() {
