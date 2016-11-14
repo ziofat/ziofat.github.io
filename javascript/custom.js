@@ -262,28 +262,14 @@
         }
 
         function initMapsNormal() {
-            var mapOptions = {
-                zoom: 17,
-                center: new google.maps.LatLng(-33.878238,151.1954822),
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                disableDefaultUI: false
-            };
-
-            var myMap = new google.maps.Map(document.getElementById('myMap'), mapOptions);
-
-            var normal = new MarkerWithLabel({
-                position: myMap.getCenter(),
-                icon: {
-                    path: google.maps.SymbolPath.CIRCLE,
-                    scale: 0
-                },
-                map: myMap,
-                labelAnchor: new google.maps.Point(10, 10),
-                labelClass: "map-label", // The CSS class for the label
-                draggable: false
-
-            });
+            var map = new BMap.Map("myMap");    // 创建Map实例
+            var point = new BMap.Point(151.1954822, -33.878238);
+            var marker = new BMap.Marker(point);  // 创建标注
+            map.addOverlay(marker);              // 将标注添加到地图中
+            map.centerAndZoom(point, 17);  // 初始化地图,设置中心点坐标和地图级别
+            map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+            map.setCurrentCity("悉尼");          // 设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
         }
 
         function initMapsDark() {
