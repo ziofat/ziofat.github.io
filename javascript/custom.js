@@ -261,96 +261,6 @@
             });
         }
 
-        function initMapsNormal() {
-            var map = new BMap.Map("myMap");    // 创建Map实例
-            var point = new BMap.Point(151.1954822, -33.878238);
-            var marker = new BMap.Marker(point);  // 创建标注
-            map.addOverlay(marker);              // 将标注添加到地图中
-            map.centerAndZoom(point, 17);  // 初始化地图,设置中心点坐标和地图级别
-            map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-            map.setCurrentCity("悉尼");          // 设置地图显示的城市 此项是必须设置的
-            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-        }
-
-        function initMapsDark() {
-            var styles = [{
-                "featureType": "all",
-                "elementType": "labels.text.fill",
-                "stylers": [{"saturation": 36}, {"color": "#000000"}, {"lightness": 40}]
-            }, {
-                "featureType": "all",
-                "elementType": "labels.text.stroke",
-                "stylers": [{"visibility": "on"}, {"color": "#000000"}, {"lightness": 16}]
-            }, {
-                "featureType": "all",
-                "elementType": "labels.icon",
-                "stylers": [{"visibility": "off"}]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.fill",
-                "stylers": [{"color": "#000000"}, {"lightness": 20}]
-            }, {
-                "featureType": "administrative",
-                "elementType": "geometry.stroke",
-                "stylers": [{"color": "#000000"}, {"lightness": 17}, {"weight": 1.2}]
-            }, {
-                "featureType": "landscape",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 20}]
-            }, {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 21}]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.fill",
-                "stylers": [{"color": "#000000"}, {"lightness": 17}]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry.stroke",
-                "stylers": [{"color": "#000000"}, {"lightness": 29}, {"weight": 0.2}]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 18}]
-            }, {
-                "featureType": "road.local",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 16}]
-            }, {
-                "featureType": "transit",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 19}]
-            }, {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{"color": "#000000"}, {"lightness": 17}]
-            }];
-            var mapOptions = {
-                zoom: 17,
-                center: new google.maps.LatLng(51.5287352, -0.3817831),
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                disableDefaultUI: false,
-                styles: styles //black n white
-            };
-
-            var myMap = new google.maps.Map(document.getElementById('myMap'), mapOptions);
-
-            var dark = new MarkerWithLabel({
-                position: myMap.getCenter(),
-                icon: {
-                    path: google.maps.SymbolPath.CIRCLE,
-                    scale: 0
-                },
-                map: myMap,
-                labelAnchor: new google.maps.Point(10, 10),
-                labelClass: "map-label", // The CSS class for the label
-                draggable: false
-
-            });
-        }
-
         function initMail() {
             /***MAIL SCRIPT***/
             $('form#contact-form').on('submit', function (e) {
@@ -392,8 +302,6 @@
         initClientsSliders();    // Initializes Clients Sliders
         initVideoPlayAndClose(); // Video Play and Close Functionality
         initMail();              // Mail Initialization
-        initMapsNormal();        // Enable For Normal Map
-        //initMapsDark();          // Enable For Dark Map
 
     });
 
@@ -414,7 +322,25 @@
         sr.reveal('#v-card-holder', {duration: 1400, distance: '150px'});
         sr.reveal('.skillbar-bar', {duration: 1800, delay: 300, distance: '0'});
         
+        function loadJScript() {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "http://api.map.baidu.com/api?v=2.0&ak=uaSgU4zUNk5oFXtGCZZRlMRc64p7wTCC&callback=init";
+            document.body.appendChild(script);
+        }
 
+        window.init = function() {
+            var map = new BMap.Map("myMap");    // 创建Map实例
+            var point = new BMap.Point(113.358956, 23.134984);
+            var marker = new BMap.Marker(point);  // 创建标注
+            map.addOverlay(marker);              // 将标注添加到地图中
+            map.centerAndZoom(point, 17);  // 初始化地图,设置中心点坐标和地图级别
+            map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
+            map.setCurrentCity("悉尼");          // 设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+        }
+
+        loadJScript();
     });
 
 
