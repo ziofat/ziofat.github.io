@@ -322,27 +322,22 @@
         sr.reveal('#v-card-holder', {duration: 1400, distance: '150px'});
         sr.reveal('.skillbar-bar', {duration: 1800, delay: 300, distance: '0'});
         
-        function loadJScript() {
-            var script = document.createElement("script");
-            script.type = "text/javascript";
-            script.src = "http://api.map.baidu.com/api?v=2.0&ak=uaSgU4zUNk5oFXtGCZZRlMRc64p7wTCC&callback=init";
-            document.body.appendChild(script);
-        }
-
         window.init = function() {
-            var map = new BMap.Map("myMap");    // 创建Map实例
-            var point = new BMap.Point(113.358956, 23.134984);
-            var marker = new BMap.Marker(point);  // 创建标注
-            map.addOverlay(marker);              // 将标注添加到地图中
-            map.centerAndZoom(point, 17);  // 初始化地图,设置中心点坐标和地图级别
-            map.addControl(new BMap.MapTypeControl());   //添加地图类型控件
-            map.setCurrentCity("悉尼");          // 设置地图显示的城市 此项是必须设置的
-            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+            var map = new AMap.Map('myMap', {
+                resizeEnable: true,
+                zoom: 16,
+                center: [114.122752, 22.60161]        
+            });
+
+            var marker = new AMap.Marker({
+                icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
+                position: [114.122752, 22.60161]
+            });
+            marker.setMap(map);
         }
 
-        loadJScript();
+        init();
     });
-
 
 })(jQuery);
 
