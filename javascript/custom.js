@@ -326,12 +326,12 @@
             var map = new AMap.Map('myMap', {
                 resizeEnable: true,
                 zoom: 16,
-                center: [114.122752, 22.60161]        
+                center: [114.097176, 22.538655]        
             });
 
             var marker = new AMap.Marker({
                 icon: "http://webapi.amap.com/theme/v1.3/markers/n/mark_b.png",
-                position: [114.122752, 22.60161]
+                position: [114.097176, 22.538655]
             });
             marker.setMap(map);
         }
