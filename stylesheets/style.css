@@ -610,13 +610,13 @@ body.scale-effect {
     padding-top: 14px; }
   #home .menu .logo-flat {
     /*menu logo*/
-    height: 200px;
     margin-top: -14px;
     background: #06A763; }
     #home .menu .logo-flat img {
       /*logo image*/
       width: 100%;
-      padding: 30px 44px 44px 44px; }
+      border-radius: 50%;
+      padding: 44px; }
 #home .menu-open {
   /*set left 0 to open menu*/
   left: 0; }
